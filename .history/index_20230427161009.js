@@ -18,8 +18,8 @@ class Linklist {
             this.head = node;
             this.tail = this.head;
         } else {
-            this.tail = node;
             this.tail.next = node;
+            this.tail = node;
         }
         this.length++;
         return this;
