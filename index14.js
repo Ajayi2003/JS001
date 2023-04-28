@@ -53,6 +53,6 @@ console.log(linkedList.insert({ name: "Peter" }));
 console.log(linkedList.insert(9));
 console.log("");
 console.log(linkedList.length);
-console.log(linkedList.remove())
+linkedList.remove();
 console.log("");
 console.log(linkedList.length);

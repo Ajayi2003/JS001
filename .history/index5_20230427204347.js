@@ -1,19 +1,17 @@
-class Node {
+class Node5 {
     constructor(val) {
         this.val = val;
         this.next = null;
     }
 }
-
-class Linklist {
+class Linkedlist5 {
     constructor() {
-        this.head = null;
         this.tail = null;
+        this.head = null;
         this.length = 0;
     }
-
-    insert(val) {
-        let node = new Node(val);
+    add(val) {
+        let node = new Node5(val);
         if (!this.head) {
             this.head = node;
             this.tail = this.head;
@@ -24,35 +22,31 @@ class Linklist {
         this.length++;
         return this;
     }
-
     remove() {
         if (!this.head) {
             return undefined;
         } else {
-            let current = this.tail;
-            let newTail = current;
-
-            while (current.next) {
+            let Tail = this.tail;
+            let newTail = Tail;
+            while (Tail.next) {
                 this.tail = newTail;
                 this.tail.next = null;
             }
-
             this.length--;
-            return current;
+            return newTail;
         }
     }
 }
-console.clear();
-let linkedList = new Linklist();
-console.log(linkedList.insert(39));
-console.log(linkedList.insert(34));
+let linkedList5 = new Linkedlist5();
+console.log(linkedList5.add(34));
+console.log(linkedList5.add(39));
 
-console.log(linkedList.insert([6, 8, 9]));
-console.log(linkedList.insert(79));
-console.log(linkedList.insert({ name: "Peter" }));
-console.log(linkedList.insert(9));
+console.log(linkedList5.add([6, 8, 9]));
+console.log(linkedList5.add(79));
+console.log(linkedList5.add([{ name: "Peter" }, { age: 20 }]));
+console.log(linkedList5.add(9));
 console.log("");
-console.log(linkedList.length);
-console.log(linkedList.remove())
+console.log(linkedList5.length);
+linkedList5.remove();
 console.log("");
-console.log(linkedList.length);
+console.log(linkedList5.length);

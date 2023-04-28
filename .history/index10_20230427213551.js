@@ -1,11 +1,11 @@
-class Node {
+class Node10 {
     constructor(val) {
         this.val = val;
         this.next = null;
     }
 }
 
-class Linklist {
+class Linkedlist10 {
     constructor() {
         this.head = null;
         this.tail = null;
@@ -43,16 +43,16 @@ class Linklist {
     }
 }
 console.clear();
-let linkedList = new Linklist();
-console.log(linkedList.insert(39));
-console.log(linkedList.insert(34));
+let linkedList10 = new Linklist10();
+console.log(linkedList10.insert(39));
+console.log(linkedList10.insert(34));
 
-console.log(linkedList.insert([6, 8, 9]));
-console.log(linkedList.insert(79));
-console.log(linkedList.insert({ name: "Peter" }));
-console.log(linkedList.insert(9));
+console.log(linkedList10.insert([6, 8, 9]));
+console.log(linkedList10.insert(79));
+console.log(linkedList10.insert({ name: "segun" }));
+console.log(linkedList10.insert(9));
 console.log("");
-console.log(linkedList.length);
-console.log(linkedList.remove())
+console.log(linkedList10.length);
+linkedList10.remove();
 console.log("");
-console.log(linkedList.length);
+console.log(linkedList10.length);
